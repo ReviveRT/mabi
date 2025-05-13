@@ -1,6 +1,14 @@
+import React from 'react';
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { Geist, Geist_Mono, Gothic_A1 } from "next/font/google";
 import "./globals.css";
+
+const gothic_a1 = Gothic_A1({
+    variable: "--font-gothic-a1",
+    subsets: ["latin"],
+    weight: ['400', '500']
+})
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
